@@ -11,8 +11,9 @@ function Project() {
     return (
         <Box
             component="section"
-            id="project"
+            id="projects"
             sx={{
+                scrollMarginTop: "90px",
                 py: {
                     xs: 8,
                     sm: 10,

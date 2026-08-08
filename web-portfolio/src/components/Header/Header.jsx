@@ -9,6 +9,10 @@ function Header() {
             id: "about",
         },
         {
+            label: "Skills",
+            id: "skills",
+        },
+        {
             label: "Projects",
             id: "projects",
         },
@@ -23,6 +27,13 @@ function Header() {
     function toggleDrawer(isOpen) {
         setOpenDrawer(isOpen);
     }
+
+    const scrollToSection = (id) => {
+        document.getElementById(id)?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    };
 
     return (
         <Box>
@@ -57,7 +68,11 @@ function Header() {
                         <Typography
                             variant="h5"
                             component="h1"
+                            onClick={() => scrollToSection("home")}
                             sx={{
+                                cursor: "pointer",
+                                userSelect: "none",
+                                WebkitTapHighlightColor: "transparent",
                                 color: "primary.main",
                                 fontWeight: 700,
                                 cursor: "pointer",
@@ -92,6 +107,7 @@ function Header() {
                                     <Button
                                         key={item.id}
                                         color="inherit"
+                                        onClick={() => scrollToSection(item.id)}
                                         sx={{
                                             color: "text.primary",
 
@@ -131,7 +147,7 @@ function Header() {
                             <IconButton
                                 onClick={(e) => {
                                     e.currentTarget.blur();
-                                    toggleDrawer(true)
+                                    toggleDrawer(true);
                                 }}
                                 sx={{
                                     color: "text.primary",
@@ -171,6 +187,10 @@ function Header() {
                     >
                         <Typography
                             variant="h6"
+                            onClick={() => {
+                                scrollToSection("home");
+                                setOpenDrawer(false);
+                            }}
                             sx={{
                                 color:"primary.main",
                                 fontWeight: 700,
@@ -192,7 +212,10 @@ function Header() {
                                 disablePadding
                             >
                                 <ListItemButton
-                                    onClick={() => toggleDrawer(false)}
+                                    onClick={() => {
+                                        toggleDrawer(false);
+                                        scrollToSection(item.id);
+                                    }}
                                     sx={{
                                         py: 2,
                                         px: 3,

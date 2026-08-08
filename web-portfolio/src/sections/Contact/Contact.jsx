@@ -10,6 +10,7 @@ function Contact(props) {
             component="section"
             id="contact"
             sx={{
+                scrollMarginTop: "90px",
                 py: {
                     xs: 8,
                     sm: 10,

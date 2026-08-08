@@ -8,11 +8,12 @@ function Hero() {
             component="section"
             id="home"
             sx={{
+                scrollMarginTop: "90px",
                 py: {
                     xs: 8,
                     sm: 10,
                     md: 12,
-                    lg: 14,
+                    lg: 20,
                 },
             }}
         >

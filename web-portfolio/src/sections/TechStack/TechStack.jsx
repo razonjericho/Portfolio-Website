@@ -5,10 +5,11 @@ import { Container, Typography, Box, Grid } from "@mui/material";
 
 function TechStack(props) {
     return (
-        <Box 
+        <Box
             component="section"
-            id="tech stack"
+            id="skills"
             sx={{
+                scrollMarginTop: "90px",
                 py: {
                     xs: 8,
                     sm: 10,

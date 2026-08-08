@@ -8,6 +8,7 @@ function About() {
             component="section"
             id="about"
             sx={{
+                scrollMarginTop: "90px",
                 py: {
                     xs: 8,
                     sm: 10,
