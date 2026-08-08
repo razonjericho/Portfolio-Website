@@ -3,6 +3,14 @@ import { Container, Grid, Box, Typography, Button, Stack } from "@mui/material";
 import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
 
 function Hero() {
+
+    const scrollToSection = (id) => {
+        document.getElementById(id)?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    };
+
     return (
         <Box
             component="section"
@@ -132,6 +140,7 @@ function Hero() {
                     >
                         <Button
                             variant="contained"
+                            onClick={() => scrollToSection("projects")}
                             sx={{
                                 px: {
                                     xs: 3,
@@ -167,6 +176,7 @@ function Hero() {
 
                         <Button
                             variant="outlined"
+                            onClick={() => scrollToSection("contact")}
                             sx={{
                                 px: {
                                     xs: 3,
