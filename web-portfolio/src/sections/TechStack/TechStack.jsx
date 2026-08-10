@@ -1,5 +1,5 @@
 import React from 'react';
-import techStackData from "./techStackData";
+import techStackData from "./TechStackData.js";
 import TechStackCard from './TechStackCard';
 import { Container, Typography, Box, Grid } from "@mui/material";
 
