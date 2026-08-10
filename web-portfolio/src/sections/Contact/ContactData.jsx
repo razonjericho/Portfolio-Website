@@ -33,8 +33,8 @@ const contactData = [
         icon: <DescriptionOutlinedIcon />,
         description: "View my resume",
         value: "View Resume",
-        href: "...",
-        type: "resume",
+        href: "/JerichoRazonResume.pdf",
+        type: "link",
     },
 ];
 
