@@ -4,7 +4,7 @@ A responsive personal portfolio website built with React, Vite, and Material UI 
 
 ## Live Demo
 
-https://your-vercel-url.vercel.app/
+https://portfolio-website-ten-mu-34.vercel.app/
 
 ## Features
 
