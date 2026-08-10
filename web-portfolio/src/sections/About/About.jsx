@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Box, Typography, Grid } from "@mui/material";
-import ProfileImage from "../../assets/Images/Profile/Profile.jpg";
+import ProfileImage from "../../assets/Images/Profile/Jericho_Profile.jpg";
 
 function About() {
     return (
