@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Typography, Divider } from "@mui/material";
 import ExperienceItem from "./ExperienceItem";
-import workExperienceData from "./experienceData";
+import workExperienceData from "./ExperienceData.js";
 
 
 function Experience(props) {
