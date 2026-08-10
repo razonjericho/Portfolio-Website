@@ -1,16 +1,61 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal portfolio website built with React, Vite, and Material UI to showcase my projects, technical skills, and software development journey.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://your-vercel-url.vercel.app/
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive design for desktop, tablet, and mobile
+- Modern UI built with Material UI
+- Smooth navigation between sections
+- Featured project showcase
+- Downloadable resume
+- Contact section with professional links
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Material UI
+- JavaScript
+
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repository.git
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+## Project Structure
+
+```
+src/
+├── assets/
+├── components/
+├── sections/
+├── theme/
+├── App.jsx
+└── main.jsx
+```
+
+## Contact
+
+- LinkedIn: https://linkedin.com/in/jericho-pete-razon
+- GitHub: https://github.com/razonjericho
+- Email: razonjericho11@gmail.com
