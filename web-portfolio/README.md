@@ -4,7 +4,7 @@ A responsive personal portfolio website built with React, Vite, and Material UI 
 
 ## Live Demo
 
-https://portfolio-website-ten-mu-34.vercel.app/
+https://jerichopete-web-portfolio.vercel.app/
 
 ## Features
 
@@ -27,7 +27,8 @@ https://portfolio-website-ten-mu-34.vercel.app/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/razonjericho/Portfolio-Website
+cd Portfolio-Website
 ```
 
 ### Install dependencies
