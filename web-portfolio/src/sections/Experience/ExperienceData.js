@@ -13,7 +13,7 @@ const workExperienceData = [
     {
         company: "Total Network Consulting",
         role: "Virtual Assistant",
-        period: "July 2025 – Present",
+        period: "July 2025 – August 2026",
         type: "Full-time",
         description: [
             "Managed data entry, report preparation, and administrative workflows while maintaining accuracy and confidentiality.",
