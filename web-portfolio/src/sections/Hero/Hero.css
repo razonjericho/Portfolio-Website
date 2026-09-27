@@ -1,0 +1,283 @@
+
+.hero-section {
+    scroll-margin-top: 90px;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+
+/* Container */
+
+.hero-container.MuiContainer-root {
+    width: 100%;
+}
+
+
+/* Content */
+
+.hero-content {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* Greeting */
+
+.hero-greeting.MuiTypography-root {
+    color: #2563EB;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* Title */
+
+.hero-title.MuiTypography-root {
+    margin-bottom: 16px;
+
+    color: #1C1E21;
+
+    font-size: 2.8rem;
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+
+/* Subtitle */
+
+.hero-subtitle.MuiTypography-root {
+    color: #2563EB;
+
+    margin-bottom: 24px;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* Description */
+
+.hero-description.MuiTypography-root {
+    max-width: 600px;
+
+    margin-bottom: 32px;
+
+    color: #65676B;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* Tagline */
+
+.hero-tagline.MuiTypography-root {
+    margin-bottom: 32px;
+
+    color: #2563EB;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* Buttons */
+
+.hero-actions {
+    width: 100%;
+}
+
+.hero-button.MuiButton-root {
+    min-width: 140px;
+
+    padding-top: 10.4px;
+    padding-bottom: 10.4px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+    font-size: 0.95rem;
+}
+
+
+/* Primary button */
+
+.hero-primary-button.MuiButton-root {
+    background-color: #2563EB;
+
+    color: #FFFFFF;
+}
+
+.hero-primary-button.MuiButton-root:hover {
+    background-color: #1D4ED8;
+}
+
+
+/* Secondary button */
+
+.hero-secondary-button.MuiButton-root {
+    border-color: #2563EB;
+
+    color: #2563EB;
+}
+
+.hero-secondary-button.MuiButton-root:hover {
+    border-color: #1D4ED8;
+
+    background-color: #E8F1FF;
+
+    color: #1D4ED8;
+}
+
+
+/* Tablet / iPad Mini */
+@media (min-width: 600px) and (max-width: 899px) {
+
+    .hero-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .hero-content {
+        max-width: 720px;
+    }
+
+    .hero-greeting.MuiTypography-root {
+        font-size: 1.5rem;
+    }
+
+    .hero-title.MuiTypography-root {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle.MuiTypography-root {
+        margin-bottom: 24px;
+
+        font-size: 1.8rem;
+    }
+
+    .hero-description.MuiTypography-root {
+        font-size: 1.1rem;
+    }
+
+    .hero-tagline.MuiTypography-root {
+        font-size: 1.1rem;
+    }
+
+    .hero-button.MuiButton-root {
+        min-width: 170px;
+
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        padding-left: 32px;
+        padding-right: 32px;
+
+        font-size: 1rem;
+    }
+}
+
+
+/* iPad Pro / Large Tablet */
+@media (min-width: 900px) and (max-width: 1199px) {
+
+    .hero-section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .hero-content {
+        max-width: 720px;
+    }
+
+    .hero-greeting.MuiTypography-root {
+        font-size: 2.2rem;
+    }
+
+    .hero-title.MuiTypography-root {
+        font-size: 4.5rem;
+    }
+
+    .hero-subtitle.MuiTypography-root {
+        margin-bottom: 24px;
+
+        font-size: 2.2rem;
+    }
+
+    .hero-description.MuiTypography-root {
+        max-width: 600px;
+
+        font-size: 1.6rem;
+    }
+
+    .hero-tagline.MuiTypography-root {
+        font-size: 1.4rem;
+    }
+
+    .hero-button.MuiButton-root {
+        min-width: 190px;
+
+        padding-top: 12.8px;
+        padding-bottom: 12.8px;
+
+        padding-left: 36px;
+        padding-right: 36px;
+
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+    .hero-section {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+
+    .hero-content {
+        max-width: 760px;
+    }
+
+    .hero-greeting.MuiTypography-root {
+        font-size: 1.5rem;
+    }
+
+    .hero-title.MuiTypography-root {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle.MuiTypography-root {
+        margin-bottom: 24px;
+
+        font-size: 1.8rem;
+    }
+
+    .hero-description.MuiTypography-root {
+        font-size: 1.1rem;
+    }
+
+    .hero-tagline.MuiTypography-root {
+        font-size: 1.2rem;
+    }
+
+    .hero-button.MuiButton-root {
+        min-width: 200px;
+
+        padding-top: 13.6px;
+        padding-bottom: 13.6px;
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        font-size: 1.05rem;
+    }
+}
