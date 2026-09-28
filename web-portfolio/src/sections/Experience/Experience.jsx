@@ -2,47 +2,22 @@ import React from "react";
 import { Box, Container, Typography, Divider } from "@mui/material";
 import ExperienceItem from "./ExperienceItem";
 import workExperienceData from "./ExperienceData.js";
+import "./Experience.css";
 
-
-function Experience(props) {
-
+function Experience() {
     return (
         <Box
             component="section"
             id="experience"
-            sx={{
-                py: {
-                    xs: 8,
-                    sm: 10,
-                    md: 12,
-                    lg: 8,
-                },
-            }}
+            className="experience-section"
         >
-            <Container maxWidth="lg">
-                <Typography 
+            <Container
+                maxWidth="lg"
+                className="experience-container"
+            >
+                <Typography
                     variant="h2"
-                        sx={{
-                            fontSize: {
-                                xs: "2.8rem",
-                                sm: "3.5rem",
-                                md: "4.5rem",
-                                lg: "2.5rem",
-                            },
-                            fontWeight: 700,
-                            lineHeight: 1.1,
-
-                            pt: {
-                                xs: 8,
-                                md: 12,
-                                lg: 2,
-                            },
-
-                            mb: {
-                                xs: 5,
-                                lg: 6,
-                            },
-                        }}
+                    className="experience-title"
                 >
                     Work Experience
                 </Typography>
@@ -58,16 +33,10 @@ function Experience(props) {
                     />
                 ))}
 
-                <Divider 
-                    sx={{ 
-                        mt: 5,
-                        mb: 5 
-                    }} 
-                />
+                <Divider className="experience-divider" />
             </Container>
         </Box>
-        
-    )
+    );
 }
 
 export default Experience;
