@@ -1,0 +1,132 @@
+
+.tech-stack-card.MuiCard-root {
+    width: 100%;
+
+    min-height: 250px;
+
+    border: 1px solid #DADDE1;
+    border-radius: 20px;
+
+    box-shadow: none;
+
+    transition: border-color 0.25s ease;
+}
+
+.tech-stack-card.MuiCard-root:hover {
+    border-color: #2563EB;
+}
+
+
+/* Card content */
+
+.tech-stack-card-content.MuiCardContent-root {
+    padding: 16px;
+}
+
+
+/* Card title */
+
+.tech-stack-card-title.MuiTypography-root {
+    color: #2563EB;
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* Skills */
+
+.tech-stack-skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+    margin-top: 16px;
+}
+
+
+/* Skill */
+
+.tech-stack-skill {
+    padding: 6px 12px;
+
+    color: #65676B;
+
+    background-color: #F6F8FC;
+
+    border: 1px solid #DADDE1;
+    border-radius: 16px;
+
+    transition: border-color 0.25s ease;
+}
+
+.tech-stack-skill:hover {
+    border-color: #2563EB;
+}
+
+
+/* Skill text */
+
+.tech-stack-skill-text.MuiTypography-root {
+    font-size: 1rem;
+}
+
+/* Tablet / iPad Mini */
+@media (min-width: 600px) and (max-width: 899px) {
+
+    .tech-stack-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .tech-stack-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .tech-stack-grid-item {
+        width: 100%;
+    }
+}
+
+/* iPad Pro / Large Tablet */
+@media (min-width: 900px) and (max-width: 1199px) {
+
+    .tech-stack-card.MuiCard-root {
+        height: 230px;
+    }
+
+    .tech-stack-card-title.MuiTypography-root {
+        font-size: 1.5rem;
+    }
+
+    .tech-stack-skill-text.MuiTypography-root {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+
+/* Desktop */
+
+@media (min-width: 1200px) {
+
+    .tech-stack-grid-item {
+        display: flex;
+    }
+
+    .tech-stack-card.MuiCard-root {
+        height: 100%;
+    }
+
+    .tech-stack-card-content.MuiCardContent-root {
+        padding: 16px;
+    }
+
+    .tech-stack-card-title.MuiTypography-root {
+        font-size: 1.1rem;
+    }
+}

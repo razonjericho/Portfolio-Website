@@ -1,69 +1,25 @@
 import React from "react";
-import { Card, CardContent, Typography, Stack, Box } from "@mui/material";
+import { Card, CardContent, Typography, Box } from "@mui/material";
+import "./TechStackCard.css";
 
-function TechStackCard ({ title, skills }) {
+function TechStackCard({ title, skills }) {
     return (
-        <Card
-            sx={{
-                border: "1px solid",
-                borderColor: "divider",
-
-                "&:hover": {
-                    borderColor: "primary.main",
-                },
-
-                width: "100%",
-                height: {
-                    xs: 250,
-                    lg: "100%",
-                },
-            }}
-        >
-            <CardContent>
-                <Typography 
-                    variant="h6" 
-                    fontWeight={600}
-                    sx={{
-                        color: "primary.main",
-                        fontSize: {
-                            lg: "1.1rem",
-                        }
-                    }}
+        <Card className="tech-stack-card">
+            <CardContent className="tech-stack-card-content">
+                <Typography
+                    variant="h6"
+                    className="tech-stack-card-title"
                 >
                     {title}
                 </Typography>
 
-                <Box
-                    sx={{
-                        display: "flex",
-                        flexWrap: "wrap",
-                        gap: 2,
-                        mt: 2,
-                    }}
-                >
+                <Box className="tech-stack-skills">
                     {skills.map((skill) => (
-                        <Box 
+                        <Box
                             key={skill}
-                            sx={{
-                                px: 1.5,
-                                py: 0.75,
-                                color: "text.secondary",
-
-                                borderRadius: 1,
-
-                                bgcolor: "#F6F8FC",
-
-                                border: "1px solid",
-                                borderColor: "divider",
-
-                                transition: "all 0.25s ease",
-
-                                "&:hover": {
-                                    borderColor: "primary.main",
-                                }
-                            }}
+                            className="tech-stack-skill"
                         >
-                            <Typography>
+                            <Typography className="tech-stack-skill-text">
                                 {skill}
                             </Typography>
                         </Box>
@@ -71,7 +27,7 @@ function TechStackCard ({ title, skills }) {
                 </Box>
             </CardContent>
         </Card>
-    )
+    );
 }
 
 export default TechStackCard;

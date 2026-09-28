@@ -1,0 +1,103 @@
+
+.tech-stack-section {
+    scroll-margin-top: 90px;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+
+/* Section title */
+
+.tech-stack-title.MuiTypography-root {
+    padding-top: 64px;
+
+    margin-bottom: 40px;
+
+    color: #1C1E21;
+
+    font-size: 2.8rem;
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+
+/* Grid */
+
+.tech-stack-grid.MuiGrid-root {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+
+/* Grid item */
+
+.tech-stack-grid-item {
+    width: 100%;
+}
+
+
+/* Tablet / iPad Mini */
+@media (min-width: 600px) and (max-width: 899px) {
+
+    .tech-stack-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .tech-stack-grid.MuiGrid-root {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tech-stack-title.MuiTypography-root {
+        padding-top: 64px;
+
+        margin-bottom: 40px;
+
+        font-size: 3.5rem;
+    }
+}
+
+
+/* iPad Pro / Large Tablet */
+@media (min-width: 900px) and (max-width: 1199px) {
+
+    .tech-stack-section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .tech-stack-grid.MuiGrid-root {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tech-stack-title.MuiTypography-root {
+        padding-top: 96px;
+
+        margin-bottom: 40px;
+
+        font-size: 4.5rem;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+    .tech-stack-title.MuiTypography-root {
+        padding-top: 16px;
+
+        margin-bottom: 48px;
+
+        font-size: 2.5rem;
+    }
+
+    .tech-stack-grid.MuiGrid-root {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
