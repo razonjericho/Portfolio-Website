@@ -1,0 +1,382 @@
+
+.project-section {
+    scroll-margin-top: 90px;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+
+/* Section title */
+
+.project-title.MuiTypography-root {
+    padding-top: 64px;
+
+    margin-bottom: 40px;
+
+    color: #1C1E21;
+
+    font-size: 2.8rem;
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+
+/* Project grid */
+
+.project-grid.MuiGrid-root {
+    display: grid;
+
+    row-gap: 48px;
+}
+
+
+/* Image */
+
+.project-image-column.MuiGrid-root {
+    width: 100%;
+}
+
+.project-image-wrapper {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    display: block;
+
+    width: 100%;
+}
+
+
+/* Project links */
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+
+    gap: 24px;
+
+    margin-top: 24px;
+    margin-left: 8px;
+}
+
+.project-link.MuiLink-root {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    color: #2563EB;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.project-link.MuiLink-root:hover {
+    color: #1D4ED8;
+}
+
+.project-link-icon.MuiSvgIcon-root {
+    font-size: 1.1rem;
+}
+
+
+/* Project details */
+
+.project-details-column.MuiGrid-root {
+    width: 100%;
+}
+
+.project-name.MuiTypography-root {
+    margin-bottom: 16px;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project-description.MuiTypography-root {
+    padding-bottom: 16px;
+
+    color: #65676B;
+
+    font-size: 0.9rem;
+
+    line-height: 1.8;
+}
+
+
+/* Subtitle */
+
+.project-subtitle.MuiTypography-root {
+    color: #1D4ED8;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.project-feature-list.MuiList-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-feature-item.MuiListItem-root {
+    align-items: flex-start;
+}
+
+.project-feature-icon.MuiListItemIcon-root {
+    min-width: 28px;
+
+    padding-top: 6px;
+}
+
+.project-feature-icon .MuiSvgIcon-root {
+    color: #2563EB;
+
+    font-size: 1rem;
+}
+
+.project-feature-text.MuiTypography-root {
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+}
+
+
+/* Divider */
+
+.project-divider.MuiDivider-root {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+/* Tech stack */
+
+.project-tech-title.MuiTypography-root {
+    padding-bottom: 12px;
+}
+
+.project-tech-stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.project-tech-chip.MuiChip-root {
+    padding: 6px 12px;
+
+    color: #65676B;
+
+    background-color: #F6F8FC;
+
+    border: 1px solid #DADDE1;
+    border-radius: 24px;
+
+    transition: border-color 0.25s ease;
+}
+
+.project-tech-chip.MuiChip-root:hover {
+    border-color: #2563EB;
+}
+
+.project-tech-chip .MuiChip-label {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    font-size: 0.8rem;
+}
+
+
+/* Tablet / iPad Mini */
+@media (min-width: 600px) and (max-width: 899px) {
+
+    .project-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .project-title.MuiTypography-root {
+        padding-top: 64px;
+
+        margin-bottom: 40px;
+
+        font-size: 3.5rem;
+    }
+
+    .project-grid.MuiGrid-root {
+        row-gap: 48px;
+    }
+
+    .project-name.MuiTypography-root {
+        font-size: 2rem;
+    }
+
+    .project-description.MuiTypography-root {
+        font-size: 1.1rem;
+    }
+
+    .project-link.MuiLink-root {
+        font-size: 1.1rem;
+    }
+
+    .project-link-icon.MuiSvgIcon-root {
+        font-size: 1.5rem;
+    }
+
+    .project-subtitle.MuiTypography-root {
+        font-size: 1rem;
+    }
+
+    .project-feature-icon .MuiSvgIcon-root {
+        font-size: 1.25rem;
+    }
+
+    .project-feature-text.MuiTypography-root {
+        font-size: 1.1rem;
+    }
+
+    .project-tech-chip .MuiChip-label {
+        padding-top: 2px;
+
+        font-size: 0.85rem;
+    }
+}
+
+
+/* iPad Pro / Large Tablet */
+@media (min-width: 900px) and (max-width: 1199px) {
+
+    .project-section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .project-title.MuiTypography-root {
+        padding-top: 96px;
+
+        margin-bottom: 40px;
+
+        font-size: 4.5rem;
+    }
+
+    .project-grid.MuiGrid-root {
+        row-gap: 64px;
+    }
+
+    .project-name.MuiTypography-root {
+        font-size: 2rem;
+    }
+
+    .project-description.MuiTypography-root {
+        font-size: 1.6rem;
+    }
+
+    .project-link.MuiLink-root {
+        font-size: 1.4rem;
+    }
+
+    .project-link-icon.MuiSvgIcon-root {
+        font-size: 2rem;
+    }
+
+    .project-subtitle.MuiTypography-root {
+        font-size: 1.5rem;
+    }
+
+    .project-feature-icon.MuiListItemIcon-root {
+        min-width: 36px;
+
+        padding-top: 10px;
+    }
+
+    .project-feature-icon .MuiSvgIcon-root {
+        font-size: 1.75rem;
+    }
+
+    .project-feature-text.MuiTypography-root {
+        font-size: 1.6rem;
+    }
+
+    .project-tech-chip .MuiChip-label {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        font-size: 1.15rem;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+    .project-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .project-title.MuiTypography-root {
+        padding-top: 16px;
+
+        margin-bottom: 48px;
+
+        font-size: 2.5rem;
+    }
+
+    .project-grid.MuiGrid-root {
+        grid-template-columns: 7fr 5fr;
+
+        column-gap: 64px;
+
+        align-items: start;
+    }
+
+    .project-image-column.MuiGrid-root,
+    .project-details-column.MuiGrid-root {
+        width: 100%;
+    }
+
+    .project-name.MuiTypography-root {
+        font-size: 1.5rem;
+    }
+
+    .project-description.MuiTypography-root {
+        font-size: 1rem;
+    }
+
+    .project-link.MuiLink-root {
+        font-size: 1rem;
+    }
+
+    .project-link-icon.MuiSvgIcon-root {
+        font-size: 1.25rem;
+    }
+
+    .project-subtitle.MuiTypography-root {
+        font-size: 1rem;
+    }
+
+    .project-feature-icon .MuiSvgIcon-root {
+        font-size: 1.25rem;
+    }
+
+    .project-feature-text.MuiTypography-root {
+        font-size: 1rem;
+    }
+
+    .project-tech-chip .MuiChip-label {
+        font-size: 0.75rem;
+    }
+}

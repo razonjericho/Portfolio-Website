@@ -3,6 +3,7 @@ const techStack = [
     "Express",
     "PostgreSQL",
     "Material UI",
+    "CSS",
     "JWT",
 ];
 
