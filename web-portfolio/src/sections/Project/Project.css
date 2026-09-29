@@ -57,7 +57,7 @@
 
 /* Project links */
 
-.project-links {
+.project-links.MuiStack-root {
     display: flex;
     flex-direction: row;
 
@@ -165,7 +165,7 @@
     padding-bottom: 12px;
 }
 
-.project-tech-stack {
+.project-tech-stack.MuiStack-root {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
