@@ -1,0 +1,393 @@
+
+.contact-section {
+    scroll-margin-top: 90px;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+
+/* Label */
+
+.contact-label.MuiTypography-root {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #2563EB;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-align: center;
+}
+
+
+/* Title */
+
+.contact-title.MuiTypography-root {
+    margin-bottom: 16px;
+
+    color: #1C1E21;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    text-align: center;
+}
+
+
+/* Description */
+
+.contact-description.MuiTypography-root {
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+
+    color: #65676B;
+
+    font-size: 0.9rem;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* Location */
+
+.contact-location {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 4px;
+
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.contact-location-icon.MuiSvgIcon-root {
+    margin-right: 2px;
+
+    color: #2563EB;
+
+    font-size: 1.2rem;
+}
+
+.contact-location-text.MuiTypography-root,
+.contact-location-divider.MuiTypography-root {
+    color: #65676B;
+
+    font-size: 0.9rem;
+}
+
+.contact-location-divider.MuiTypography-root {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+/* Grid */
+
+.contact-grid.MuiGrid-root {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+.contact-grid-item {
+    width: 100%;
+}
+
+
+/* Card */
+
+.contact-card.MuiCard-root {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #DADDE1;
+    border-radius: 20px;
+
+    box-shadow: none;
+
+    transition: border-color 0.25s ease;
+}
+
+.contact-card.MuiCard-root:hover {
+    border-color: #2563EB;
+}
+
+
+/* Card content */
+
+.contact-card-content.MuiCardContent-root {
+    padding: 16px;
+}
+
+
+/* Card header */
+
+.contact-card-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Icon */
+
+.contact-card-icon {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 84px;
+    height: 84px;
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    padding-top: 4px;
+
+    color: #2563EB;
+
+    background-color: #E8F1FF;
+
+    border-radius: 50%;
+}
+
+.contact-card-icon .MuiSvgIcon-root {
+    font-size: 50px;
+}
+
+
+/* Card title */
+
+.contact-card-title.MuiTypography-root {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* Card description */
+
+.contact-card-description.MuiTypography-root {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    color: #65676B;
+
+    font-size: 0.8rem;
+
+    text-align: center;
+}
+
+
+/* Divider */
+
+.contact-card-divider.MuiDivider-root {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+
+/* Card value */
+
+.contact-card-value-container {
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* Copy */
+
+.contact-copy {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+
+.contact-value.MuiTypography-root {
+    color: #2563EB;
+
+    font-size: 0.8rem;
+}
+
+
+/* Links */
+
+.contact-link-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.contact-link.MuiLink-root {
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    color: #2563EB;
+
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.contact-action-button.MuiIconButton-root {
+    color: #2563EB;
+}
+
+.contact-action-button .MuiSvgIcon-root {
+    font-size: 1rem;
+}
+
+
+/* Tablet / iPad Mini */
+@media (min-width: 600px) and (max-width: 899px) {
+
+    .contact-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .contact-title.MuiTypography-root {
+        font-size: 3.5rem;
+    }
+
+    .contact-description.MuiTypography-root {
+        font-size: 1.1rem;
+    }
+
+    .contact-location-icon.MuiSvgIcon-root {
+        font-size: 1.3rem;
+    }
+
+    .contact-location-text.MuiTypography-root,
+    .contact-location-divider.MuiTypography-root {
+        font-size: 1rem;
+    }
+
+    .contact-grid.MuiGrid-root {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-card-title.MuiTypography-root {
+        font-size: 1.4rem;
+    }
+
+    .contact-card-description.MuiTypography-root {
+        font-size: 1rem;
+    }
+
+    .contact-value.MuiTypography-root,
+    .contact-link.MuiLink-root {
+        font-size: 1rem;
+    }
+}
+
+
+/* iPad Pro / Large Tablet */
+@media (min-width: 900px) and (max-width: 1199px) {
+
+    .contact-section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .contact-label.MuiTypography-root {
+        font-size: 1.5rem;
+    }
+
+    .contact-title.MuiTypography-root {
+        font-size: 4.5rem;
+    }
+
+    .contact-description.MuiTypography-root {
+        font-size: 1.6rem;
+    }
+
+    .contact-location-icon.MuiSvgIcon-root {
+        font-size: 1.6rem;
+    }
+
+    .contact-location-text.MuiTypography-root,
+    .contact-location-divider.MuiTypography-root {
+        font-size: 1.4rem;
+    }
+
+    .contact-grid.MuiGrid-root {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-card-title.MuiTypography-root {
+        font-size: 1.6rem;
+    }
+
+    .contact-card-description.MuiTypography-root {
+        font-size: 1.2rem;
+    }
+
+    .contact-value.MuiTypography-root,
+    .contact-link.MuiLink-root {
+        font-size: 1.2rem;
+    }
+
+    .contact-action-button .MuiSvgIcon-root {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+    .contact-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .contact-title.MuiTypography-root {
+        font-size: 2.5rem;
+    }
+
+    .contact-grid.MuiGrid-root {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact-value.MuiTypography-root,
+    .contact-link.MuiLink-root {
+        font-size: 0.9rem;
+    }
+}
