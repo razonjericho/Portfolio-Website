@@ -1,0 +1,108 @@
+
+.footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    border-top: 1px solid #DADDE1;
+
+    background-color: #F0F2F5;
+}
+
+
+/* Container */
+
+.footer-container {
+    width: 100%;
+}
+
+
+/* Text */
+
+.footer-text.MuiTypography-root {
+    color: #65676B;
+
+    font-size: 0.875rem;
+
+    line-height: 1.5;
+}
+
+
+/* Name */
+
+.footer-name.MuiTypography-root {
+    color: #2563EB;
+
+    font-weight: 600;
+}
+
+.footer-text-desktop {
+    display: none;
+}
+
+.footer-text-mobile {
+    display: block;
+}
+
+/* Tablet / iPad Mini */
+@media (min-width: 600px) and (max-width: 899px) {
+
+    .footer {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .footer-text-desktop {
+        display: block;
+
+        font-size: 1rem;
+    }
+
+    .footer-text-mobile {
+        display: none;
+    }
+
+    .footer-name.MuiTypography-root {
+        font-size: 1rem;
+    }
+}
+
+/* iPad Pro / Large Tablet */
+@media (min-width: 900px) and (max-width: 1199px) {
+
+    .footer {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .footer-text-desktop.MuiTypography-root {
+        display: block;
+
+        font-size: 1.25rem;
+    }
+
+    .footer-text-mobile {
+        display: none;
+    }
+
+    .footer-name.MuiTypography-root {
+        font-size: 1.5rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+    .footer-text-desktop {
+        display: block;
+
+        font-size: 0.9rem;
+    }
+
+    .footer-text-mobile {
+        display: none;
+    }
+
+    .footer-name.MuiTypography-root {
+        font-size: 0.9rem;
+    }
+}

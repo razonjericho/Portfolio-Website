@@ -1,53 +1,25 @@
 import React from "react";
 import { Container, Box, Typography } from "@mui/material";
+import "./Footer.css";
 
 function Footer() {
     const currentYear = new Date().getFullYear();
 
-    return(
-        <Box 
+    return (
+        <Box
             component="footer"
-            sx={{
-                py: 3,
-                borderTop: 1,
-                borderColor: "divider",
-                bgcolor: "background.default"
-            }}
+            className="footer"
         >
-            <Container maxWidth="lg">
+            <Container
+                maxWidth="lg"
+                className="footer-container"
+            >
                 {/* Desktop & Tablet */}
-                <Typography
-                    sx={{
-                        display: {
-                            xs: "none",
-                            sm: "block",
-                        },
-                        color: "text.secondary",
-                        fontSize: {
-                            sm: "0.875rem",
-                            md: "1.2rem",
-                            lg: "0.9rem",
-                        },
-                        py: {
-                            xs: 0,
-                            sm: 0,
-                            md: 1,
-                            lg: 0,
-                        },
-                    }}
-                >
+                <Typography className="footer-text footer-text-desktop">
                     Designed and developed by{" "}
                     <Typography
                         component="span"
-                        sx={{
-                            color: "primary.main",
-                            fontSize: {
-                                sm: "0.875rem",
-                                md: "1.2rem",
-                                lg: "0.9rem",
-                            },
-                            fontWeight: 600,
-                        }}
+                        className="footer-name"
                     >
                         Jericho Razon
                     </Typography>
@@ -55,25 +27,13 @@ function Footer() {
                 </Typography>
 
                 {/* Mobile */}
-                <Typography
-                    sx={{
-                        display: {
-                            xs: "block",
-                            sm: "none",
-                        },
-                        color: "text.secondary",
-                        fontSize: "0.875rem",
-                    }}
-                >
+                <Typography className="footer-text footer-text-mobile">
                     Designed and developed
                     <br />
                     by{" "}
                     <Typography
                         component="span"
-                        sx={{
-                            color: "primary.main",
-                            fontWeight: 600,
-                        }}
+                        className="footer-name"
                     >
                         Jericho Razon
                     </Typography>
@@ -81,8 +41,7 @@ function Footer() {
                 </Typography>
             </Container>
         </Box>
-        
-    )
+    );
 }
 
 export default Footer;
