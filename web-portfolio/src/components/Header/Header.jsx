@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { AppBar, Toolbar, Stack, Container, Typography, Box, Button, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText, Divider } from '@mui/material';
+import React, { useState } from "react";
+import { AppBar, Toolbar, Stack, Container, Typography, Box, Button, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText, Divider } from "@mui/material";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import "./Header.css";
 
 function Header() {
     const navItems = [
@@ -22,7 +23,7 @@ function Header() {
         },
     ];
 
-    const [ openDrawer, setOpenDrawer ] = useState(false);
+    const [openDrawer, setOpenDrawer] = useState(false);
 
     function toggleDrawer(isOpen) {
         setOpenDrawer(isOpen);
@@ -40,94 +41,33 @@ function Header() {
             <AppBar
                 position="fixed"
                 elevation={1}
-                sx={{
-                    bgcolor: "background.paper",
-                    color: "text.primary",
-                    borderBottom: 1,
-                    borderColor: "divider",
-                }}
+                className="header-app-bar"
             >
                 <Container maxWidth="lg">
                     <Toolbar
                         disableGutters
-                        sx={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                            alignItems: "center",
-
-                            py: {
-                                xs: 2,
-                                sm: 2.5,
-                                md: 3.5,
-                                lg: 2.5,
-                            },
-
-                            minHeight: "unset",
-                        }}
+                        className="header-toolbar"
                     >
                         <Typography
                             variant="h5"
                             component="h1"
                             onClick={() => scrollToSection("home")}
-                            sx={{
-                                cursor: "pointer",
-                                userSelect: "none",
-                                WebkitTapHighlightColor: "transparent",
-                                color: "primary.main",
-                                fontWeight: 700,
-                                cursor: "pointer",
-
-                                fontSize: {
-                                    xs: "1.5rem",
-                                    sm: "1.85rem",
-                                    md: "2.2rem",
-                                    lg: "2rem",
-                                },
-                            }}
+                            className="header-logo"
                         >
                             Pete
                         </Typography>
-                        
-                        <Box
-                            sx={{
-                                display: {
-                                    xs: "none",
-                                    md: "block",
-                                },
-                            }}
-                        >
+
+                        <Box className="header-desktop-nav">
                             <Stack
                                 direction="row"
-                                spacing={{
-                                    md: 2,
-                                    lg: 2.5,
-                                }}
+                                className="header-nav"
                             >
                                 {navItems.map((item) => (
                                     <Button
                                         key={item.id}
                                         color="inherit"
                                         onClick={() => scrollToSection(item.id)}
-                                        sx={{
-                                            color: "text.primary",
-
-                                            fontWeight: 600,
-
-                                            fontSize: {
-                                                md: "1.5rem",
-                                                lg: "1rem",
-                                            },
-
-                                            px: {
-                                                md: 2.5,
-                                                lg: 2,
-                                            },
-
-                                            "&:hover": {
-                                                color: "primary.main",
-                                                bgcolor: "transparent",
-                                            },
-                                        }}
+                                        className="header-nav-button"
                                     >
                                         {item.label}
                                     </Button>
@@ -135,31 +75,13 @@ function Header() {
                             </Stack>
                         </Box>
 
-                        <Box
-                            sx={{
-                                display: {
-                                    xs: "flex",
-                                    md: "none",
-                                    lg: "none",
-                                },
-                            }}
-                        >
+                        <Box className="header-mobile-menu">
                             <IconButton
                                 onClick={(e) => {
                                     e.currentTarget.blur();
                                     toggleDrawer(true);
                                 }}
-                                sx={{
-                                    color: "text.primary",
-
-                                    "& .MuiSvgIcon-root": {
-                                        fontSize: {
-                                            xs: 30,
-                                            sm: 32,
-                                            md: 34,
-                                        },
-                                    },
-                                }}
+                                className="header-menu-button"
                             >
                                 <MenuOutlinedIcon />
                             </IconButton>
@@ -173,31 +95,15 @@ function Header() {
                 open={openDrawer}
                 onClose={() => toggleDrawer(false)}
             >
-                <Box
-                    sx={{
-                        width: 280,
-                    }}
-                >
-                    <Box
-                        sx={{               
-                            px: 2,
-                            pt: 3,
-                            pb: 2.9,
-                        }}
-                    >
+                <Box className="header-drawer">
+                    <Box className="header-drawer-header">
                         <Typography
                             variant="h6"
                             onClick={() => {
                                 scrollToSection("home");
                                 setOpenDrawer(false);
                             }}
-                            sx={{
-                                color:"primary.main",
-                                fontWeight: 700,
-                                fontSize: {
-                                    sm: "1.65rem",
-                                },
-                            }}
+                            className="header-drawer-logo"
                         >
                             Pete
                         </Typography>
@@ -216,19 +122,10 @@ function Header() {
                                         toggleDrawer(false);
                                         scrollToSection(item.id);
                                     }}
-                                    sx={{
-                                        py: 2,
-                                        px: 3,
-                                    }}
+                                    className="header-drawer-item"
                                 >
                                     <ListItemText
                                         primary={item.label}
-                                        slotProps={{
-                                            primary: {
-                                                fontSize: "1.05rem",
-                                                fontWeight: 500,
-                                            },
-                                        }}
                                     />
                                 </ListItemButton>
                             </ListItem>
@@ -237,9 +134,7 @@ function Header() {
                 </Box>
             </Drawer>
         </Box>
-
-
-    )
+    );
 }
 
 export default Header;
